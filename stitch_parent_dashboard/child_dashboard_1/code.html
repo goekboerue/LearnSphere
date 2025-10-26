@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kids Learning App Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#13a4ec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans"]
+          },
+          borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between">
+<div class="flex size-12 shrink-0 items-center justify-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="A friendly cartoon monster avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBVyB7eOC3hRCOuCqoG6NIevZAkn3l1fRIBnGn0UySmXbVDaWE4QR9thwasXMca9lM7P-ulrAT5qVg06Ie6EspWfWBIWukGNTJupelxURcjpM4JRYfAtyvB_2urzuwwlISEvIPUA10GW92SPyj_Kw1WN2NqWXBajZ_W7UDcOkkq8oFbj9GICrBr2Xt-e4bSdOtsc2BeLDoFefON9pxOSDvGxofWskxq9DJCCh-rynxtdvZob4JrKFA7-mS1b9pResQUWMC1w2At3oNc");'></div>
+</div>
+<h2 class="text-[#0d171b] dark:text-slate-50 text-lg font-bold leading-tight tracking-[-0.015em] flex-1">Hi, Alex! Ready for an adventure?</h2>
+<div class="flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-3xl text-slate-500 dark:text-slate-400">
+            settings
+        </span>
+</div>
+</div>
+<div class="flex px-4 py-3 justify-center">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 flex-1 bg-primary text-slate-50 gap-2 pl-5 text-base font-bold leading-normal tracking-[0.015em]">
+<span class="material-symbols-outlined text-slate-50" data-icon="Rocket" data-size="24px" data-weight="regular">
+          rocket_launch
+        </span>
+<span class="truncate">Start a New Quest!</span>
+</button>
+</div>
+<div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<div class="flex items-stretch p-4 gap-4">
+<div class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-background-light dark:bg-background-dark shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-60">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col" data-alt="Illustration of mountains for a math test" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCQpMrAHYHDb8O4UMoc1Z9hLHHpvn8g7onBBFE16iwKxj4_afS6j_bttljGKBj5lmB8RGkLjKIYXo8GVzYmNEfnfUWSz-cmcrnFwE7AXoLyqGC1Ru_UuVnHIrHFmWXKStv4GusCUGbwmBrefDaoAmLD2LugjZbXPwgMKa1b0OzWPtkgL5J8o2ejRGyY-mhXPVsq618OUWHHMs3GSz-NEBJgn3W4dboT69JA9njI1i3q2iqHFkZ9Ys4wDFA5cBPw1cRyTYpH_XGDjcz0");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-[#0d171b] dark:text-slate-50 text-base font-medium leading-normal">Math Mountains</p>
+<p class="text-green-500 text-sm font-normal leading-normal">Completed</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary/20 dark:bg-primary/30 text-[#0d171b] dark:text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Play Again</span>
+</button>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-background-light dark:bg-background-dark shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-60">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col" data-alt="Illustration of a river for a reading test" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCsTv6SP_uicfdVUVYRGYRxNjog96tfzoy_4ZwbR348Ncynu5IY-3PyT_1RP18oo5ghkBaM1NeBhKCw5IBDWIR4sWOJP787049WK7sQS3ywkUW0vy9ShH6FfigQKOIOVU0hEKklcKYF0zAta5sGgdUu7v-7D4E4ZoUei7O58p2Qlin63dgarM8rHFA1tMYCGshiCMUxg4IVoch1EUkfh31Sqjw6c-uKdoZc_Iikx4q2oC4MipvyBHePoKYRyPlVpJzvn1S3sAiQ_Xki");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-[#0d171b] dark:text-slate-50 text-base font-medium leading-normal">Reading River</p>
+<p class="text-[#4c809a] dark:text-slate-400 text-sm font-normal leading-normal">Not started</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Start</span>
+</button>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-background-light dark:bg-background-dark shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-60">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col" data-alt="Illustration of a science lab" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCnNPXN1sbiDMBunxhSfogDQ7EVnsmtkV7iyPwrd9kWqyyocEXAfuetNhImNKdBKkgad2dHPT7PGhN7Sqb-o_ovNEsFWb9IlVocgi0tys3ZRd5yluhR4e72bIyCLWLtrPOkPYDDuDgFNDjAZOtDlr-1Mu0xpD9JPc6NJkau_RD2K4ljMESBffFwvto-aiGUCYdjrK87fIt_cKADgzmfcLnf09MSaR4dlDpeoMQOkS9yba91RVauvBkS7YAdcBecwfeoyhiJXyqkwWdo");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-[#0d171b] dark:text-slate-50 text-base font-medium leading-normal">Science Lab</p>
+<p class="text-orange-500 text-sm font-normal leading-normal">In progress</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Continue</span>
+</button>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-background-light dark:bg-background-dark shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-60">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col" data-alt="Illustration of historical artifacts for a history test" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDEtZyx5xGf0OPl2IsLrkK3IVwYjWHszd3mL6lw2avIOO7Ze1Zt2RkKbM-tvV6AQhAz5CoIeDC7lDMziNW7aDcooMo-PRCoxjg1LaEvrZ5CStjles452_7GNQGGYU9GvtXqFw6wAP_dvz6IIqBHmRkn_5zh00FMwYNhdSpx08tl9XJ8C0BmeYekzT4eMewmkRWpDl1WLipClSU1a_L1inZ9t07S4jgMyoABZIpkMz73f0bYh-ZEgtYmoez8wL67Oeq6Oip9QtizuN_5");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-[#0d171b] dark:text-slate-50 text-base font-medium leading-normal">History Hunt</p>
+<p class="text-green-500 text-sm font-normal leading-normal">Completed</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary/20 dark:bg-primary/30 text-[#0d171b] dark:text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Play Again</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<h2 class="text-[#0d171b] dark:text-slate-50 text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Your Trophy Room!</h2>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+<div class="bg-cover bg-center flex flex-col gap-3 items-center rounded-full justify-center aspect-square" data-alt="A golden trophy for math" style='background-image: linear-gradient(0deg, rgba(20, 20, 20, 0.4) 0%, rgba(20, 20, 20, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAzco94uXTQFVM1H95sN-f0xldPAkGUdQLlrX0yhCI6t9AaquZM2ffJLY4ebMJ0CFR48BBC1Iq6R_luQ5DasJK42ZvlVcg9Mxq2YCl6_jIgzs3NUGXtAihaEGcKwox-XwBj4dOnkradLycup-4fMITHywapJvS-LI1ZvsAZFsfySBmcMWqIwdrPuo9RjEm0JU50D9_vScuH9eghUiS8ghfpOMEBIqxvjFl67JFI5wzONrHlKh_vKTkNNX20UR8B7CPmetjzPPhi0atT");'>
+<p class="text-white text-base font-bold leading-tight w-[70%] text-center line-clamp-2">Math Master</p>
+</div>
+<div class="bg-cover bg-center flex flex-col gap-3 items-center rounded-full justify-center aspect-square" data-alt="A golden trophy for reading" style='background-image: linear-gradient(0deg, rgba(20, 20, 20, 0.4) 0%, rgba(20, 20, 20, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAL54cZShrhe7BwHPNR5W6MxNcl7e3wYf8lbutK9pQbIb5D33181QYLR7zupOsZh8RTvnlAhvvMaLMIMqnEn-ydKoHC_yGg9ZNPNGWgXm58OevsKzJZOgn4u_yZVN3IDzNy6Nnj_D2a72t4N4OQE-z5jTQk29c8J-G29ZXfuRbmkWTa6_VO9f7C7ZqK3KejBdGviNxM551tUqNrTU2uuZYjRPpPn_gLORKIZOChbbfdsIIiKFc7t76IyxeW_1hmjtZTV-Awk1Hfbq_N");'>
+<p class="text-white text-base font-bold leading-tight w-[70%] text-center line-clamp-2">Reading Rockstar</p>
+</div>
+<div class="bg-cover bg-center flex flex-col gap-3 items-center rounded-full justify-center aspect-square" data-alt="A golden trophy for a perfect score" style='background-image: linear-gradient(0deg, rgba(20, 20, 20, 0.4) 0%, rgba(20, 20, 20, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuARg0xbnuqTQVul-D9_wGFejxR0fWhwQ78FNcwl0D_emZF_r9bQP1oqCg7v1qqRUCWxS_oQC3dkp6uiLI-nQ3l4BlJ5jTTgbeRwwM1Fx6Y9fYxSnowKsO30erd2iJche9EKomEZ-krhuum5-37mZWhvDllO6fCHMtIrcUAA73TXi8jw3_wI-W6LgPT2xzUVGpLeWf47xMoasSRP8XOp2nRFQVhx300zRwoITGSYe0lxB9wqrxacROX8QPEuew5B57YP6hbPAq9i4xYb");'>
+<p class="text-white text-base font-bold leading-tight w-[70%] text-center line-clamp-2">Perfect Score!</p>
+</div>
+</div>
+</div>
+</body></html>

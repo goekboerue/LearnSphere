@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Parent Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13a4ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="flex size-12 shrink-0 items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Profile picture of a child named Mia" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAn37Kz0lvFkQePOpFGjOLKomQFROMcfunKNj3VHwreI0ChPKhpsat5Bha8_NkSJ_v-PFH7fVcneJiRv8kMKh3Fa8PF7nDF-pYCSEYfsWNeObh9EYQ6TyNlz2rJymlNsMkDrijpST2s4F2UR8lH4FyBC_SY6DRq1GLAENOqlWm8Hg0X7QSf2ZddJFB7eAVO2p1GRLhyH4Nz9kUlYMxFAzsTv8dGszCW1O-swddkKDDZROXSHaBaNLYasqC8orrdx8vO55xChd63lWbJ");'></div>
+</div>
+<h2 class="text-[#0d171b] dark:text-slate-200 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center font-display">Mia's Progress</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-[#0d171b] dark:text-slate-200 gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Overall Performance Section -->
+<h2 class="text-[#0d171b] dark:text-slate-200 text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 font-display">Overall Performance</h2>
+<div class="flex flex-wrap gap-4 p-4">
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800">
+<p class="text-slate-600 dark:text-slate-400 text-base font-medium leading-normal font-display">Avg. Score</p>
+<p class="text-[#0d171b] dark:text-slate-200 tracking-light text-2xl font-bold leading-tight font-display">85%</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800">
+<p class="text-slate-600 dark:text-slate-400 text-base font-medium leading-normal font-display">Tests Taken</p>
+<p class="text-[#0d171b] dark:text-slate-200 tracking-light text-2xl font-bold leading-tight font-display">12</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800">
+<p class="text-slate-600 dark:text-slate-400 text-base font-medium leading-normal font-display">Improvement</p>
+<p class="text-green-600 dark:text-green-400 tracking-light text-2xl font-bold leading-tight font-display">+5%</p>
+</div>
+</div>
+<!-- Performance Over Time Section -->
+<h2 class="text-[#0d171b] dark:text-slate-200 text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 font-display">Performance Over Time</h2>
+<div class="flex flex-wrap gap-4 px-4 py-6 bg-white dark:bg-slate-800 rounded-xl m-4">
+<div class="flex min-w-72 flex-1 flex-col gap-2">
+<p class="text-slate-600 dark:text-slate-400 text-base font-medium leading-normal font-display">Test Scores</p>
+<p class="text-[#0d171b] dark:text-slate-200 tracking-light text-[32px] font-bold leading-tight truncate font-display">85%</p>
+<div class="flex gap-1">
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal font-display">Last 6 Months</p>
+<p class="text-green-600 dark:text-green-400 text-base font-medium leading-normal font-display">+5%</p>
+</div>
+<div class="flex min-h-[180px] flex-1 flex-col gap-8 py-4">
+<svg fill="none" height="148" preserveaspectratio="none" viewbox="-3 0 478 150" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25V149H326.769H0V109Z" fill="url(#paint0_linear_chart)"></path>
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25" stroke="#13a4ec" stroke-linecap="round" stroke-width="3"></path>
+<defs>
+<lineargradient gradientunits="userSpaceOnUse" id="paint0_linear_chart" x1="236" x2="236" y1="1" y2="149">
+<stop stop-color="#13a4ec" stop-opacity="0.2"></stop>
+<stop offset="1" stop-color="#13a4ec" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+</svg>
+<div class="flex justify-around">
+<p class="text-slate-500 dark:text-slate-400 text-[13px] font-bold leading-normal tracking-[0.015em] font-display">Jan</p>
+<p class="text-slate-500 dark:text-slate-400 text-[13px] font-bold leading-normal tracking-[0.015em] font-display">Feb</p>
+<p class="text-slate-500 dark:text-slate-400 text-[13px] font-bold leading-normal tracking-[0.015em] font-display">Mar</p>
+<p class="text-slate-500 dark:text-slate-400 text-[13px] font-bold leading-normal tracking-[0.015em] font-display">Apr</p>
+<p class="text-slate-500 dark:text-slate-400 text-[13px] font-bold leading-normal tracking-[0.015em] font-display">May</p>
+<p class="text-slate-500 dark:text-slate-400 text-[13px] font-bold leading-normal tracking-[0.015em] font-display">Jun</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Subject Performance -->
+<h2 class="text-[#0d171b] dark:text-slate-200 text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 font-display">Subject Performance</h2>
+<div class="px-4 pb-4 space-y-4">
+<!-- Math -->
+<div class="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-4">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center size-12 rounded-full bg-blue-100 dark:bg-blue-900/50">
+<span class="material-symbols-outlined text-blue-500 dark:text-blue-400">calculate</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-lg text-[#0d171b] dark:text-slate-200 font-display">Math</p>
+<p class="text-slate-500 dark:text-slate-400 font-display">88% Average Score</p>
+</div>
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400">chevron_right</span>
+</div>
+</div>
+<!-- Science -->
+<div class="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-4">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center size-12 rounded-full bg-green-100 dark:bg-green-900/50">
+<span class="material-symbols-outlined text-green-500 dark:text-green-400">science</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-lg text-[#0d171b] dark:text-slate-200 font-display">Science</p>
+<p class="text-slate-500 dark:text-slate-400 font-display">82% Average Score</p>
+</div>
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400">chevron_right</span>
+</div>
+</div>
+<!-- Reading -->
+<div class="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-4">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center size-12 rounded-full bg-orange-100 dark:bg-orange-900/50">
+<span class="material-symbols-outlined text-orange-500 dark:text-orange-400">auto_stories</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-lg text-[#0d171b] dark:text-slate-200 font-display">Reading</p>
+<p class="text-slate-500 dark:text-slate-400 font-display">85% Average Score</p>
+</div>
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Focus Areas -->
+<h2 class="text-[#0d171b] dark:text-slate-200 text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 font-display">Focus Areas</h2>
+<div class="px-4 pb-8 space-y-3">
+<p class="text-slate-600 dark:text-slate-400 font-display">Based on recent test results, here are some topics Mia could focus on:</p>
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-3 bg-yellow-100/50 dark:bg-yellow-900/30 p-3 rounded-lg">
+<span class="material-symbols-outlined text-yellow-600 dark:text-yellow-400">lightbulb</span>
+<p class="flex-1 text-yellow-800 dark:text-yellow-200 font-medium font-display">Fractions and Decimals in Math</p>
+</div>
+<div class="flex items-center gap-3 bg-yellow-100/50 dark:bg-yellow-900/30 p-3 rounded-lg">
+<span class="material-symbols-outlined text-yellow-600 dark:text-yellow-400">lightbulb</span>
+<p class="flex-1 text-yellow-800 dark:text-yellow-200 font-medium font-display">Life Cycles in Science</p>
+</div>
+</div>
+<button class="w-full mt-4 bg-primary text-white font-bold py-3 px-4 rounded-lg font-display">
+                Explore Learning Resources
+            </button>
+</div>
+<!-- Bottom Navigation -->
+<div class="sticky bottom-0 bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 mt-auto">
+<div class="flex justify-around p-2">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-xs font-bold font-display">Dashboard</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined">assessment</span>
+<span class="text-xs font-medium font-display">Reports</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined">school</span>
+<span class="text-xs font-medium font-display">Learn</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium font-display">Profile</span>
+</a>
+</div>
+</div>
+</div>
+</body></html>

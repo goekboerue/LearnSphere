@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Science Test</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#f56565", // Cheerful Red
+              "secondary": "#4299e1", // Bright Blue
+              "accent": "#f6e05e", // Sunny Yellow
+              "background-light": "#f0f9ff", // Light Sky Blue
+              "background-dark": "#1a202c",
+              "text-light": "#2d3748",
+              "text-dark": "#e2e8f0",
+              "option-bg": "#ffffff",
+              "option-border": "#e2e8f0",
+              "selected-option-bg": "#68d391", // Fun Green
+              "selected-option-border": "#48bb78", // Darker Fun Green
+            },
+            fontFamily: {
+              display: ["Plus Jakarta Sans", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.75rem",
+              lg: "1.25rem",
+              xl: "2rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+    </style>
+<style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between">
+<div class="text-text-light dark:text-text-dark flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-secondary">arrow_back_ios_new</span>
+</div>
+<h2 class="text-text-light dark:text-text-dark text-xl font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Science Whiz!</h2>
+<div class="flex size-12 shrink-0 items-center"></div>
+</div>
+<div class="flex flex-col gap-3 p-4">
+<div class="flex gap-6 justify-end">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Question 3 of 10</p>
+</div>
+<div class="rounded-full bg-slate-200 dark:bg-slate-700 h-4">
+<div class="h-4 rounded-full bg-accent" style="width: 30%;"></div>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-lg m-4 p-6">
+<h1 class="text-text-light dark:text-text-dark tracking-light text-2xl font-bold leading-tight text-center pb-6">What is the largest planet in our solar system?</h1>
+<div class="flex flex-col gap-4" style="--radio-dot-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(255,255,255)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3ccircle cx=%278%27 cy=%278%27 r=%274%27/%3e%3c/svg%3e');">
+<label class="flex items-center gap-4 rounded-xl border-2 border-solid border-option-border p-4 has-[:checked]:bg-selected-option-bg has-[:checked]:border-selected-option-border has-[:checked]:text-white transition-all duration-300">
+<input class="h-6 w-6 border-2 border-secondary bg-transparent text-transparent checked:bg-secondary checked:border-white checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0" name="planet" type="radio"/>
+<p class="text-lg font-medium leading-normal flex-1">Mars</p>
+</label>
+<label class="flex items-center gap-4 rounded-xl border-2 border-solid border-option-border p-4 has-[:checked]:bg-selected-option-bg has-[:checked]:border-selected-option-border has-[:checked]:text-white transition-all duration-300">
+<input checked="" class="h-6 w-6 border-2 border-secondary bg-transparent text-transparent checked:bg-secondary checked:border-white checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0" name="planet" type="radio"/>
+<p class="text-lg font-medium leading-normal flex-1">Jupiter</p>
+</label>
+<label class="flex items-center gap-4 rounded-xl border-2 border-solid border-option-border p-4 has-[:checked]:bg-selected-option-bg has-[:checked]:border-selected-option-border has-[:checked]:text-white transition-all duration-300">
+<input class="h-6 w-6 border-2 border-secondary bg-transparent text-transparent checked:bg-secondary checked:border-white checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0" name="planet" type="radio"/>
+<p class="text-lg font-medium leading-normal flex-1">Venus</p>
+</label>
+<label class="flex items-center gap-4 rounded-xl border-2 border-solid border-option-border p-4 has-[:checked]:bg-selected-option-bg has-[:checked]:border-selected-option-border has-[:checked]:text-white transition-all duration-300">
+<input class="h-6 w-6 border-2 border-secondary bg-transparent text-transparent checked:bg-secondary checked:border-white checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0" name="planet" type="radio"/>
+<p class="text-lg font-medium leading-normal flex-1">Saturn</p>
+</label>
+</div>
+</div>
+<div class="flex-grow"></div>
+<div class="flex px-4 py-5 justify-center sticky bottom-0 bg-background-light dark:bg-background-dark">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 flex-1 bg-primary text-white text-lg font-bold leading-normal tracking-[0.015em] shadow-lg transform hover:scale-105 transition-transform">
+<span class="truncate">Next Question</span>
+</button>
+</div>
+</div>
+
+</body></html>

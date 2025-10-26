@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Onboarding - How it Works</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13a4ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                        "accent": "#ff6b6b"
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+<div class="flex flex-col items-center justify-start flex-1 px-4 py-8">
+<h1 class="text-[#0d171b] tracking-light text-[32px] font-bold leading-tight text-center pb-3 pt-6">Smart &amp; Fun Learning</h1>
+<div class="flex w-full grow bg-slate-50 @container py-3">
+<div class="w-full gap-1 overflow-hidden bg-slate-50 @[480px]:gap-2 aspect-[3/2] flex">
+<div class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none flex-1" data-alt="A friendly robot building a custom test with blocks" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCSdIoVj5O_zLFmwQroY07IrQc1_Fq4R9kDcrwDXoRlzvDm7zyCxVeTxB7Y7O7xoG4lgM9hDTLySa3eDDbgBs_NdS3xZ-1pV1fpIs67hezvco6NXACIDDR3QDHE0f0YLvwa_jfSnoUZo5zqbPLisECSfqysDihL8fBYODUdu3LAYC3QxH1ipiHj5dbTkB7n0c2Gfl86O_Y-A38JRPM_PUmSHsUfKbcD2-j6-K0jp2ypnu7UfHSeHtbHgmCviiE0JEffVjvuQGb_RHys");'></div>
+</div>
+</div>
+<div class="w-full space-y-4">
+<div class="flex items-center justify-between gap-4 rounded-xl bg-white p-4 shadow-[0_4px_12px_rgba(0,0,0,0.05)]">
+<div class="flex items-center justify-center bg-primary/20 text-primary h-12 w-12 rounded-full">
+<span class="material-symbols-outlined">
+                            auto_awesome
+                        </span>
+</div>
+<div class="flex flex-col gap-1 flex-1">
+<p class="text-[#0d171b] text-base font-bold leading-tight">Tests Made Just for You!</p>
+<p class="text-[#4c809a] text-sm font-normal leading-normal">The app creates tests based on your learning level.</p>
+</div>
+</div>
+<div class="flex items-center justify-between gap-4 rounded-xl bg-white p-4 shadow-[0_4px_12px_rgba(0,0,0,0.05)]">
+<div class="flex items-center justify-center bg-primary/20 text-primary h-12 w-12 rounded-full">
+<span class="material-symbols-outlined">
+                            trending_up
+                        </span>
+</div>
+<div class="flex flex-col gap-1 flex-1">
+<p class="text-[#0d171b] text-base font-bold leading-tight">Track Your Child's Growth</p>
+<p class="text-[#4c809a] text-sm font-normal leading-normal">See test scores, time spent, and areas where your child excels or needs more practice.</p>
+</div>
+</div>
+</div>
+<div class="w-full mt-8">
+<div class="flex w-full flex-row items-center justify-center gap-3 py-5">
+<div class="h-2 w-2 rounded-full bg-[#cfdfe7]"></div>
+<div class="h-2.5 w-2.5 rounded-full bg-primary"></div>
+<div class="h-2 w-2 rounded-full bg-[#cfdfe7]"></div>
+<div class="h-2 w-2 rounded-full bg-[#cfdfe7]"></div>
+</div>
+<button class="w-full bg-accent text-white font-bold py-4 px-8 rounded-xl text-lg shadow-lg shadow-accent/30 hover:bg-accent/90 transition-colors duration-300">
+                    Next
+                </button>
+</div>
+</div>
+</div>
+</body></html>

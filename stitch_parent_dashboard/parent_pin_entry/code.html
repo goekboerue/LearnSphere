@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Parent Zone - Enter PIN</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13a4ec", // A vibrant teal
+                        "secondary": "#ff7f50", // Playful orange
+                        "accent": "#ff007f", // Bright magenta
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-screen w-full flex-col items-center justify-between bg-background-light dark:bg-background-dark overflow-hidden p-4">
+<div class="flex flex-col items-center pt-16">
+<h1 class="text-[#0d171b] dark:text-white tracking-light text-[32px] font-bold leading-tight text-center pb-3">Parent Zone</h1>
+<p class="text-[#4c809a] dark:text-gray-300 text-base font-normal leading-normal pb-8 text-center">Enter your 4-digit PIN to continue.</p>
+<div class="flex justify-center px-4 py-3">
+<fieldset class="relative flex gap-4">
+<input class="flex h-16 w-16 text-center text-2xl font-bold [appearance:textfield] focus:outline-0 focus:ring-0 [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none rounded-xl border-2 border-transparent bg-gray-200 dark:bg-gray-700 focus:border-2 focus:border-primary text-gray-900 dark:text-white" max="9" maxlength="1" min="0" onkeydown="javascript:(event.key=='Backspace'&amp;&amp;this.value===''&amp;&amp;this.previousSibling&amp;&amp;((this.previousSibling.value=''),this.previousSibling.focus()))||(event.key==='ArrowLeft'&amp;&amp;this.previousSibling&amp;&amp;this.previousSibling.focus())||(event.key==='ArrowRight'&amp;&amp;this.nextSibling&amp;&amp;this.nextSibling.focus());" onkeyup="javascript:event.key.match(/^\d$/)&amp;&amp;((this.value.length&gt;1&amp;&amp;((this.nextSibling&amp;&amp;(this.nextSibling.value=this.value.slice(1))),(this.value=this.value[0]))),(this.nextSibling&amp;&amp;this.nextSibling.focus()));" type="number" value=""/>
+<input class="flex h-16 w-16 text-center text-2xl font-bold [appearance:textfield] focus:outline-0 focus:ring-0 [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none rounded-xl border-2 border-transparent bg-gray-200 dark:bg-gray-700 focus:border-2 focus:border-primary text-gray-900 dark:text-white" max="9" maxlength="1" min="0" onkeydown="javascript:(event.key=='Backspace'&amp;&amp;this.value===''&amp;&amp;this.previousSibling&amp;&amp;((this.previousSibling.value=''),this.previousSibling.focus()))||(event.key==='ArrowLeft'&amp;&amp;this.previousSibling&amp;&amp;this.previousSibling.focus())||(event.key==='ArrowRight'&amp;&amp;this.nextSibling&amp;&amp;this.nextSibling.focus());" onkeyup="javascript:event.key.match(/^\d$/)&amp;&amp;((this.value.length&gt;1&amp;&amp;((this.nextSibling&amp;&amp;(this.nextSibling.value=this.value.slice(1))),(this.value=this.value[0]))),(this.nextSibling&amp;&amp;this.nextSibling.focus()));" type="number" value=""/>
+<input class="flex h-16 w-16 text-center text-2xl font-bold [appearance:textfield] focus:outline-0 focus:ring-0 [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none rounded-xl border-2 border-transparent bg-gray-200 dark:bg-gray-700 focus:border-2 focus:border-primary text-gray-900 dark:text-white" max="9" maxlength="1" min="0" onkeydown="javascript:(event.key=='Backspace'&amp;&amp;this.value===''&amp;&amp;this.previousSibling&amp;&amp;((this.previousSibling.value=''),this.previousSibling.focus()))||(event.key==='ArrowLeft'&amp;&amp;this.previousSibling&amp;&amp;this.previousSibling.focus())||(event.key==='ArrowRight'&amp;&amp;this.nextSibling&amp;&amp;this.nextSibling.focus());" onkeyup="javascript:event.key.match(/^\d$/)&amp;&amp;((this.value.length&gt;1&amp;&amp;((this.nextSibling&amp;&amp;(this.nextSibling.value=this.value.slice(1))),(this.value=this.value[0]))),(this.nextSibling&amp;&amp;this.nextSibling.focus()));" type="number" value=""/>
+<input class="flex h-16 w-16 text-center text-2xl font-bold [appearance:textfield] focus:outline-0 focus:ring-0 [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none rounded-xl border-2 border-transparent bg-gray-200 dark:bg-gray-700 focus:border-2 focus:border-primary text-gray-900 dark:text-white" max="9" maxlength="1" min="0" onkeydown="javascript:(event.key=='Backspace'&amp;&amp;this.value===''&amp;&amp;this.previousSibling&amp;&amp;((this.previousSibling.value=''),this.previousSibling.focus()))||(event.key==='ArrowLeft'&amp;&amp;this.previousSibling&amp;&amp;this.previousSibling.focus())||(event.key==='ArrowRight'&amp;&amp;this.nextSibling&amp;&amp;this.nextSibling.focus());" onkeyup="javascript:event.key.match(/^\d$/)&amp;&amp;((this.value.length&gt;1&amp;&amp;((this.nextSibling&amp;&amp;(this.nextSibling.value=this.value.slice(1))),(this.value=this.value[0]))),(this.nextSibling&amp;&amp;this.nextSibling.focus()));" type="number" value=""/>
+</fieldset>
+</div>
+<p class="text-accent text-sm font-normal leading-normal pt-4 text-center underline cursor-pointer">Forgot PIN?</p>
+</div>
+<div class="w-full max-w-sm p-2 bg-gray-200 dark:bg-gray-800 rounded-xl">
+<div class="grid grid-cols-3 gap-2">
+<button class="keypad-btn">1</button>
+<button class="keypad-btn">2</button>
+<button class="keypad-btn">3</button>
+<button class="keypad-btn">4</button>
+<button class="keypad-btn">5</button>
+<button class="keypad-btn">6</button>
+<button class="keypad-btn">7</button>
+<button class="keypad-btn">8</button>
+<button class="keypad-btn">9</button>
+<div class="w-full"></div>
+<button class="keypad-btn">0</button>
+<button class="keypad-btn flex items-center justify-center">
+<span class="material-symbols-outlined">backspace</span>
+</button>
+</div>
+</div>
+</div>
+<style>
+    .keypad-btn {
+        @apply w-full h-16 text-3xl font-bold rounded-lg bg-white dark:bg-gray-700 text-secondary dark:text-white transition-all duration-100 active:bg-secondary active:text-white;
+    }
+</style>
+</body></html>

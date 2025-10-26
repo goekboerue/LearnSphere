@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Math Performance Breakdown</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;family=Fredoka+One&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#FF6B6B",
+            "background-light": "#FFF5F5",
+            "background-dark": "#1A202C",
+            "accent-green": "#4CAF50",
+            "accent-yellow": "#FFC107",
+            "accent-orange": "#FF9800",
+            "text-light": "#4A5568",
+            "text-dark": "#F7FAFC",
+            "surface-light": "#FFFFFF",
+            "surface-dark": "#2D3748"
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"],
+            "heading": ["Fredoka One", "cursive"]
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "1.5rem",
+            "xl": "2rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden font-display">
+<div class="flex flex-col gap-2 bg-background-light dark:bg-background-dark p-4 pb-2 sticky top-0 z-10">
+<div class="flex items-center h-12 justify-between">
+<div class="text-[#0d171b] dark:text-white flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<div class="flex items-center gap-2">
+<img class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6QIAiSPrHU01ZoU3OL9V6F1snF3IiOUBHlO-bji8TQ9WDXAYuPsNinVFhXqxt3r4QdpdeAig61vd_SywgA4PJPffNg6uDRfgO4zTAhl0ZeF3zV4KuHX658LzyFjnHLXqUexTA77B3Jkuh2E6ksudx59G8uIqBSeQGwnAVpm0NhwRIEqcSdsQ5hYCqQT8x9096IWbWkR8cuvuXNsw2a6Si1UC04KbqWlaRxr0kFQ2HdBuFNXVgwZw0-ayHIGkyIMDUOPRpYOY_jo_8"/>
+<p class="text-[#0d171b] dark:text-white text-base font-medium">Alex</p>
+</div>
+</div>
+<p class="text-[#1A202C] dark:text-white tracking-light text-[32px] font-bold leading-tight font-heading">Math</p>
+</div>
+<div class="p-4 @container">
+<div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-lg bg-surface-light dark:bg-surface-dark overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-[16/10] bg-cover rounded-t-xl @xl:rounded-l-xl @xl:rounded-t-none" data-alt="A colorful illustration of children learning math concepts like geometry and addition." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD-HGnS9asr_WigpMebBhy0v4zzYYNGOOWRIWsWmcUMqxhNYYDHaIV1e6h8omYsvnnWXcOdjNiun25iwFzjI_-KHhWb4ZyGHYkuo_XTagmQh8ZLYtvDVGe26CcMJwr6IIM-2j8ce57hP6drWGANYR-LCW4yBln8lhxe940qoIen3Eho0Thssed3Bk7Z4y2YEDLDIA8mDRvDCVDWgyfcvOtCZd_baZ5CeOBbeEmPqKfHqYKDOn3dadA91EAEJKPhHJQpBgZko8VDon7s");'></div>
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-6 px-4">
+<p class="text-primary text-sm font-bold leading-normal uppercase tracking-wider">Alex's Performance</p>
+<p class="text-text-dark dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] font-heading">Great work in Fractions!</p>
+<div class="flex items-end gap-3 justify-between">
+<p class="text-text-light dark:text-slate-400 text-base font-medium leading-normal">Overall Score: <span class="font-bold text-primary">85%</span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-4 px-4 py-2">
+<div class="flex min-w-72 flex-1 flex-col gap-2 rounded-xl border border-slate-100 dark:border-slate-700 bg-surface-light dark:bg-surface-dark p-6 shadow-md">
+<p class="text-[#1A202C] dark:text-white text-lg font-bold leading-normal font-heading">Topic Performance</p>
+<div class="flex items-baseline gap-2">
+<p class="text-primary tracking-light text-5xl font-bold leading-tight truncate font-heading">85%</p>
+<div class="flex gap-1 items-center">
+<p class="text-text-light dark:text-slate-400 text-sm font-medium leading-normal">This week</p>
+<p class="text-accent-green text-sm font-bold leading-normal flex items-center gap-px"><span class="material-symbols-outlined text-base">arrow_drop_up</span>+5%</p>
+</div>
+</div>
+<div class="grid min-h-[180px] gap-x-4 gap-y-4 grid-cols-[auto_1fr_auto] items-center py-3">
+<p class="text-text-light dark:text-slate-400 text-sm font-bold leading-normal tracking-[0.015em]">Addition</p>
+<div class="h-3 flex-1 bg-slate-200 dark:bg-slate-700 rounded-full"><div class="bg-[#38A169] h-full rounded-full" style="width: 98%;"></div></div>
+<p class="text-[#38A169] text-sm font-semibold">98%</p>
+<p class="text-text-light dark:text-slate-400 text-sm font-bold leading-normal tracking-[0.015em]">Fractions</p>
+<div class="h-3 flex-1 bg-slate-200 dark:bg-slate-700 rounded-full"><div class="bg-[#4299E1] h-full rounded-full" style="width: 95%;"></div></div>
+<p class="text-[#4299E1] text-sm font-semibold">95%</p>
+<p class="text-text-light dark:text-slate-400 text-sm font-bold leading-normal tracking-[0.015em]">Subtraction</p>
+<div class="h-3 flex-1 bg-slate-200 dark:bg-slate-700 rounded-full"><div class="bg-[#F6E05E] h-full rounded-full" style="width: 75%;"></div></div>
+<p class="text-[#D69E2E] text-sm font-semibold">75%</p>
+<p class="text-text-light dark:text-slate-400 text-sm font-bold leading-normal tracking-[0.015em]">Long Division</p>
+<div class="h-3 flex-1 bg-slate-200 dark:bg-slate-700 rounded-full"><div class="bg-[#ED8936] h-full rounded-full" style="width: 62%;"></div></div>
+<p class="text-[#ED8936] text-sm font-semibold">62%</p>
+<p class="text-text-light dark:text-slate-400 text-sm font-bold leading-normal tracking-[0.015em]">Word Problems</p>
+<div class="h-3 flex-1 bg-slate-200 dark:bg-slate-700 rounded-full"><div class="bg-[#E53E3E] h-full rounded-full" style="width: 58%;"></div></div>
+<p class="text-[#E53E3E] text-sm font-semibold">58%</p>
+</div>
+</div>
+</div>
+<h3 class="text-[#1A202C] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4 font-heading">Strengths 💪</h3>
+<div class="flex flex-col gap-3 px-4">
+<div class="flex items-center gap-4 bg-surface-light dark:bg-surface-dark p-4 rounded-lg min-h-[72px] justify-between border border-slate-100 dark:border-slate-700 shadow-sm">
+<div class="flex items-center gap-4">
+<div class="text-white flex items-center justify-center rounded-lg bg-accent-green shrink-0 size-12">
+<span class="material-symbols-outlined text-3xl">emoji_events</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-[#1A202C] dark:text-white text-base font-bold leading-normal line-clamp-1">Fractions</p>
+<p class="text-text-light dark:text-slate-400 text-sm font-normal leading-normal line-clamp-2">Excellent understanding</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-[#1A202C] dark:text-white text-base font-bold leading-normal">95%</p></div>
+</div>
+<div class="flex items-center gap-4 bg-surface-light dark:bg-surface-dark p-4 rounded-lg min-h-[72px] justify-between border border-slate-100 dark:border-slate-700 shadow-sm">
+<div class="flex items-center gap-4">
+<div class="text-white flex items-center justify-center rounded-lg bg-accent-green shrink-0 size-12">
+<span class="material-symbols-outlined text-3xl">emoji_events</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-[#1A202C] dark:text-white text-base font-bold leading-normal line-clamp-1">Basic Addition</p>
+<p class="text-text-light dark:text-slate-400 text-sm font-normal leading-normal line-clamp-2">Mastered this topic</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-[#1A202C] dark:text-white text-base font-bold leading-normal">98%</p></div>
+</div>
+</div>
+<h3 class="text-[#1A202C] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-6 font-heading">Areas for Improvement 💡</h3>
+<div class="flex flex-col gap-3 px-4">
+<div class="flex items-center gap-4 bg-surface-light dark:bg-surface-dark p-4 rounded-lg min-h-[72px] justify-between border border-slate-100 dark:border-slate-700 shadow-sm">
+<div class="flex items-center gap-4">
+<div class="text-white flex items-center justify-center rounded-lg bg-accent-orange shrink-0 size-12">
+<span class="material-symbols-outlined text-3xl">lightbulb</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-[#1A202C] dark:text-white text-base font-bold leading-normal line-clamp-1">Word Problems</p>
+<p class="text-text-light dark:text-slate-400 text-sm font-normal leading-normal line-clamp-2">Needs more practice</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-[#1A202C] dark:text-white text-base font-bold leading-normal">58%</p></div>
+</div>
+<div class="flex items-center gap-4 bg-surface-light dark:bg-surface-dark p-4 rounded-lg min-h-[72px] justify-between border border-slate-100 dark:border-slate-700 shadow-sm">
+<div class="flex items-center gap-4">
+<div class="text-white flex items-center justify-center rounded-lg bg-accent-orange shrink-0 size-12">
+<span class="material-symbols-outlined text-3xl">lightbulb</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-[#1A202C] dark:text-white text-base font-bold leading-normal line-clamp-1">Long Division</p>
+<p class="text-text-light dark:text-slate-400 text-sm font-normal leading-normal line-clamp-2">Could use a review</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-[#1A202C] dark:text-white text-base font-bold leading-normal">62%</p></div>
+</div>
+</div>
+<h3 class="text-[#1A202C] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-6 font-heading">Recommendations ✨</h3>
+<div class="flex flex-col gap-4 px-4 pb-24">
+<div class="flex flex-col gap-3 bg-surface-light dark:bg-surface-dark p-4 rounded-xl border border-slate-100 dark:border-slate-700 shadow-sm">
+<p class="text-[#1A202C] dark:text-white font-medium">To improve in <span class="font-bold text-primary">Word Problems</span>, try these exercises:</p>
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-12">
+<span class="material-symbols-outlined text-3xl">menu_book</span>
+</div>
+<div class="flex-grow">
+<p class="text-[#1A202C] dark:text-white font-bold">Lesson: Solving Word Problems</p>
+<p class="text-xs text-text-light dark:text-slate-400">5 min video</p>
+</div>
+<button class="flex items-center justify-center size-12 rounded-full bg-primary text-white shadow-lg transform hover:scale-105 transition-transform">
+<span class="material-symbols-outlined">play_arrow</span>
+</button>
+</div>
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-12">
+<span class="material-symbols-outlined text-3xl">edit</span>
+</div>
+<div class="flex-grow">
+<p class="text-[#1A202C] dark:text-white font-bold">Practice: Mixed Operations</p>
+<p class="text-xs text-text-light dark:text-slate-400">10 questions</p>
+</div>
+<button class="flex items-center justify-center size-12 rounded-full bg-primary text-white shadow-lg transform hover:scale-105 transition-transform">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="fixed bottom-0 left-0 right-0 bg-surface-light/80 dark:bg-surface-dark/80 backdrop-blur-sm border-t border-slate-200 dark:border-slate-700 rounded-t-2xl">
+<div class="flex justify-around items-center h-20 px-4">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-text-light dark:text-slate-400" href="#">
+<span class="material-symbols-outlined">bar_chart</span>
+<span class="text-xs font-medium">Progress</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-text-light dark:text-slate-400" href="#">
+<span class="material-symbols-outlined">school</span>
+<span class="text-xs font-medium">Learn</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-text-light dark:text-slate-400" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</div>
+</div>
+</div>
+
+</body></html>

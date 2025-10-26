@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Avatar Shop</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#40E0D0",
+                        "secondary": "#FFD700",
+                        "accent": "#1E90FF",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                        "text-light": "#0d171b",
+                        "text-dark": "#ffffff",
+                        "muted-light": "#D3D3D3",
+                        "muted-dark": "#525252"
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Header Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="flex items-center gap-2">
+<button class="text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-3xl">arrow_back_ios_new</span>
+</button>
+</div>
+<h2 class="text-text-light dark:text-text-dark text-2xl font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Avatar Shop</h2>
+<div class="flex items-center gap-2 bg-accent/20 dark:bg-accent/30 p-2 rounded-full">
+<span class="material-symbols-outlined text-secondary text-2xl">star</span>
+<p class="text-accent dark:text-white text-base font-bold leading-normal tracking-[0.015em] shrink-0">500</p>
+</div>
+</div>
+<!-- Avatar Grid -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-4 p-4">
+<!-- Equipped Avatar Card -->
+<div class="flex flex-col gap-3 pb-3">
+<div class="relative w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl border-4 border-primary" data-alt="A cosmic cat wearing a space helmet with stars in the background." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBi7uxWN2nfolCD8jf9OXjtGAd0s0BdkHCYNwKxB84N5PpIpQEWxfhtLvyE2jUS9d1PUDf2n7Ix8vLWBYjJ7KR-Ex6-N1y4c6qA8lIy1Mnddi17IRWw1WbzVYWVrFPhv5vTMRpHjTAWlUfkeK_DfLG0kn-oygqrANf-LI51T52QNIm-gR8jnndQPo0ddoBkI_BryLoWq9Ae_DeFiqU_wu2O8PZxK_WVrAQFVJ02n6NuXWqgg0j4_Cp__fD7L6wmzwxi6daNjaVhasjI");'>
+<div class="absolute top-2 right-2 bg-primary text-white text-xs font-bold px-2 py-1 rounded-full">Selected</div>
+</div>
+<div>
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Cosmic Cat</p>
+<p class="text-primary text-sm font-bold leading-normal">Equipped</p>
+</div>
+</div>
+<!-- Buyable Avatar Card -->
+<div class="flex flex-col gap-3 pb-3">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl" data-alt="A cute sloth wearing a superhero cape and mask." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA-d3bPnKza0NYwxEjRL9a8PCH4isCC9pSTI6ab89teBjE5iEk3_V9CPPe_GGMIIRqqM9hvOPyTnipz4BlHBigS9rvEHSWXsxiPOsT_f670_hafn42X-couK-INm7uNrIZZpvsxVEA6WfkZGN4DykyJslFtuGtvharyL6PrwM1FsZHGMZ3LFnNcrtXYYWLLVB8R-306I-GYEWgTevM9yMsgF5dn6Qquc-9tkaLXxQFkmRdU4UM143o8R1sWOgLjRxr9e3kJlZ0sCQz9");'></div>
+<div>
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Super Sloth</p>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-lg">star</span>
+<p class="text-text-light dark:text-text-dark text-sm font-normal leading-normal">150</p>
+</div>
+</div>
+<button class="w-full bg-primary text-white font-bold py-2 rounded-lg">Buy</button>
+</div>
+<!-- Locked Avatar Card -->
+<div class="flex flex-col gap-3 pb-3 opacity-50">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl" data-alt="A dinosaur wearing an explorer's hat and backpack." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC95NqB1ZcAtX3sxIjzuohgdYnBVsPOp7ePHzvacs9sTfHlHNVQhuM9l7CxfcGuK15_qf_20z_I2R94Sf-cX0ikap9rO932XmyrTsjSV6BjFyQgyJzzf1D97xiMqlEEyVVtd08_OdkdzsRMD5__J4oiSf2Lx0zs3MMRc2UsvI2_zCAa_0gGnqF4KJ1fyPfV4fJdpCcOZl2GKPW5QxWBh9_lvCtL7v2hGzq4Bo4Mg7NyksFV_58ZZZodkHJvwU1dO3Z_NKq5gdntZPaz");'></div>
+<div>
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Dino Explorer</p>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-lg">star</span>
+<p class="text-text-light dark:text-text-dark text-sm font-normal leading-normal">200</p>
+</div>
+</div>
+<button class="w-full bg-muted-light dark:bg-muted-dark text-text-light dark:text-text-dark font-bold py-2 rounded-lg" disabled="">Locked</button>
+</div>
+<div class="flex flex-col gap-3 pb-3">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl" data-alt="A gopher in a futuristic space suit, looking out at a galaxy." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDSrnxN224st5lnvGBcl7-NAovcLBcMQgXAqvsz6p_JAFfK7lZweF1G0e7SdGrwnY1gKPCbFpmYlZ5xRqby6AtJfppi69i2TETbDeTeXryKsvidsVI0xkZ-nPIWdahyF23tUGW78VWctVWOfZUX7mm2JxT8Ac6DjDl80HOoV8e3YLLb9C2GFq0hBX-oj16XHxtu3LYOEsxH7KIX5z4x9aG4bSrlvccsgowXb_qIAyBEthcX53azUoo3HKO9KTKPtMm_CdfTrDnKNrs_");'></div>
+<div>
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Galactic Gopher</p>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-lg">star</span>
+<p class="text-text-light dark:text-text-dark text-sm font-normal leading-normal">250</p>
+</div>
+</div>
+<button class="w-full bg-primary text-white font-bold py-2 rounded-lg">Buy</button>
+</div>
+<div class="flex flex-col gap-3 pb-3 opacity-50">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl" data-alt="An ant wearing an astronaut helmet, with stars reflecting in the visor." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBj4WbHbVX2b1xYjuPwv9TKFim1Tl_qhK7Y6qNUvK6gWjlp6fs-LbSifAFJ1_wgM3S_j0LXa04djD7cEyILlRLdY5HK4feeWiBrnZgEjT3IrEvzgjZn0F3C0GMmJO1mcAGzZV34s4SuU5derm5h3lw96NqzUR0ih9lXxAmDKzA9ttUi9E_M5LD2FPKA3rSdsTBOqL-rU8T45aSVrf2Nn3F2zcRGTepRUMJfUgM38ZMhHeW-JyHGmVVVyOYkonb3-pIJxK_2IFZvDk7D");'></div>
+<div>
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Astro Ant</p>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-lg">star</span>
+<p class="text-text-light dark:text-text-dark text-sm font-normal leading-normal">300</p>
+</div>
+</div>
+<button class="w-full bg-muted-light dark:bg-muted-dark text-text-light dark:text-text-dark font-bold py-2 rounded-lg" disabled="">Locked</button>
+</div>
+<div class="flex flex-col gap-3 pb-3">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl" data-alt="A robotic rabbit with glowing blue eyes and metallic ears." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDjJVOSLUB2T4nQbqtlXRGMH4kYiauspm-WBQaq8kYeQ38fuJpylHCORSR7y2J2RvAuMaMc7BHSEnehJF47oZlMLfHJsG1L7Xml7iR-hmjo7YW1nKMkriD-rNXqIyWIJsbUtSO-Spm8y1WbIeiaGeY4ThHBnheQFbkGF1XQ-0sgDTOt6Re85gBqbHlK7v7s9Bp8dEIS4pS5p5nqRPOcJXeAvOnPsVCauK4rXHwUzE6MxxDJ9dpwZOmpchVfld2_An4g8sXNI-tQWv47");'></div>
+<div>
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Robo-Rabbit</p>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-lg">star</span>
+<p class="text-text-light dark:text-text-dark text-sm font-normal leading-normal">350</p>
+</div>
+</div>
+<button class="w-full bg-primary text-white font-bold py-2 rounded-lg">Buy</button>
+</div>
+</div>
+<!-- Confirmation Modal -->
+<div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-20 hidden" id="confirmation-modal">
+<div class="bg-background-light dark:bg-background-dark p-6 rounded-xl shadow-lg w-11/12 max-w-sm text-center">
+<h3 class="text-xl font-bold text-text-light dark:text-text-dark mb-4">Confirm Purchase</h3>
+<img class="w-32 h-32 mx-auto rounded-xl mb-4" data-alt="A cute sloth wearing a superhero cape and mask." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiqsJrofN3NOfCDrsuIegLDzcZV6DvQG6mIJH8WZ9tcN5ne4jhQC_TmR7AoApPnpfYvv6I5Tq3ppBqw7YpxBU-U_SGuucRQugZ9E2VpwwY2cuwSn2GOQPbvxDWQGafnNAeQVTENr8pjdrpZyQTX2ZPh_tSr9bsFpQ0GbhLA3Q5THhbTU0HyEID8Ej8nsdOsiK2zRFsZT_5rZmjl_ptqOtqjtIz_OWLSWRruopWMBgRdhUwJPB7Gfca9fKDH3YY-8Jra1RbCG-xaO3G"/>
+<p class="text-text-light dark:text-text-dark mb-6">Would you like to buy Super Sloth for 150 Star Coins?</p>
+<div class="flex justify-center gap-4">
+<button class="px-6 py-2 bg-muted-light dark:bg-muted-dark text-text-light dark:text-text-dark font-bold rounded-lg">Not now</button>
+<button class="px-6 py-2 bg-primary text-white font-bold rounded-lg">Yes!</button>
+</div>
+</div>
+</div>
+<!-- Success Toast -->
+<div class="fixed bottom-20 left-1/2 -translate-x-1/2 bg-green-500 text-white px-6 py-3 rounded-full shadow-lg hidden" id="success-toast">
+            Purchase successful!
+        </div>
+<!-- Bottom Nav Bar -->
+<div class="flex gap-2 border-t border-[#e7eff3] dark:border-gray-700 bg-background-light dark:bg-background-dark px-4 pb-3 pt-2 sticky bottom-0">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">assignment</span>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Tests</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary dark:text-primary" href="#">
+<div class="relative">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 700;">store</span>
+</div>
+<p class="text-xs font-bold leading-normal tracking-[0.015em]">Shop</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Profile</p>
+</a>
+</div>
+</div>
+</body></html>

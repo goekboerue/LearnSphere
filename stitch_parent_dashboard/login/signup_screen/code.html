@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Login/Signup</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#4A90E2",
+            "secondary": "#F8D347",
+            "accent": "#7ED321",
+            "background-light": "#F5F5F5",
+            "background-dark": "#101c22",
+            "text-light": "#4A4A4A",
+            "text-dark": "#F5F5F5",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex flex-col h-screen w-full group/design-root overflow-x-hidden">
+<div class="flex-grow flex flex-col justify-between">
+<div class="flex flex-col items-center pt-8 px-4">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary text-4xl">auto_stories</span>
+<span class="text-2xl font-bold text-text-light dark:text-text-dark">LearnSphere</span>
+</div>
+<div class="w-full max-w-sm h-64 bg-center bg-no-repeat bg-contain" data-alt="A cartoon character reading a book." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC4O7kpXAmg3T1D0JAK8f2fx3mwGPRYlIn-XkWdSlaEJCbnedhpnCXQpAI2XCfOlJ8JMNP4MDKbjtbVy9x92oMVTkIBRcm-kMNEY_uxrj2hy7NdP_cpPO03Wq75ZpHQqpS0bzFXg5w1uLZ5cTM0esrSm-CMuIk3V0CJy_nolNC0imH7RC0rg3raMJjH5wq8EZw198sS6gbE_iAlLWdyuo847I--wQmZN-QHduTus1-gLnjBYQdMgMBtDGLsPL9bC6unJOrdDlI8A4tJ");'></div>
+<h1 class="text-text-light dark:text-text-dark tracking-light text-2xl font-bold leading-tight text-center pb-3 pt-6">Let's start learning!</h1>
+</div>
+<div class="w-full px-4 pb-8 space-y-4 max-w-md mx-auto">
+<div class="flex flex-col gap-4">
+<label class="flex flex-col">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal pb-2">Email or Username</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-text-light dark:text-text-dark focus:outline-0 focus:ring-0 border-none bg-white dark:bg-gray-800 focus:border-none h-14 placeholder:text-gray-400 dark:placeholder:text-gray-500 p-4 text-base font-normal leading-normal" placeholder="you@example.com" value=""/>
+</label>
+<label class="flex flex-col">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal pb-2">Password</p>
+<div class="flex w-full flex-1 items-stretch rounded-xl">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-l-xl text-text-light dark:text-text-dark focus:outline-0 focus:ring-0 border-none bg-white dark:bg-gray-800 focus:border-none h-14 placeholder:text-gray-400 dark:placeholder:text-gray-500 p-4 pr-2 text-base font-normal leading-normal" placeholder="••••••••" type="password" value=""/>
+<div class="text-gray-400 dark:text-gray-500 flex border-none bg-white dark:bg-gray-800 items-center justify-center pr-4 rounded-r-xl">
+<span class="material-symbols-outlined">visibility</span>
+</div>
+</div>
+</label>
+<a class="text-primary text-sm font-normal leading-normal pb-3 pt-1 text-right underline" href="#">Forgot Password?</a>
+</div>
+<div class="flex flex-col gap-4">
+<button class="flex items-center justify-center w-full h-14 rounded-xl bg-primary text-white text-base font-bold">Log In</button>
+<button class="flex items-center justify-center w-full h-14 rounded-xl bg-secondary text-text-light text-base font-bold">Sign Up</button>
+</div>
+<div class="relative flex items-center py-4">
+<div class="flex-grow border-t border-gray-300 dark:border-gray-600"></div>
+<span class="flex-shrink mx-4 text-gray-400 dark:text-gray-500 text-sm">Or</span>
+<div class="flex-grow border-t border-gray-300 dark:border-gray-600"></div>
+</div>
+<div class="flex flex-col gap-4">
+<button class="flex items-center justify-center w-full h-14 rounded-xl bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 text-text-light dark:text-text-dark text-base font-medium gap-2">
+<img alt="Google logo" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHdJQvXgZWwSsHTLiqZ8lTsWIlXYsJyQFL00BprZ-DRYqeUS-AF3MmdoRdB5BREz0bWd7leb6v3Tyj6KhpaZxqsWNY99H_acfco7d8JONE9AXL6t6K_hXKWw3VEfl3brUoSBH-jxdY0UDMEJIhjwV1SBUNK7RDz7poPkHPEddxicaxAEscua7bAls7CN_5VI48ZozlnNwfHg28p8nYP03-fhwnLXtKFbCsH4pGuzdwM9HM8BR0WIz6kvF2k0OiwptjPCGHAG7uLV2i"/>
+            Sign Up with Google
+          </button>
+<button class="flex items-center justify-center w-full h-14 rounded-xl bg-black text-white text-base font-medium gap-2">
+<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 16 16">
+<path d="M8.016 1.488c-.97 0-1.803.49-2.617 1.226-.77.712-1.34 1.777-1.34 2.898 0 .15.01.298.026.442h3.931V4.225c0-.001-.002-.002 0-.003-.01-1.282.937-2.738 2.656-2.738a2.535 2.535 0 0 1 1.838.74c.005.005.01.01.015.015L12.5 3.23C11.53 2.14 10.015 1.488 8.016 1.488ZM3.73 6.945c-1.238.48-2.14 1.554-2.14 2.87C1.59 11.455 2.85 13 4.43 13c.725 0 1.45-.298 2.012-.816.14-.132.27-.272.39-.422-1.294-.43-2.182-1.34-2.182-2.583 0-1.42 1.15-2.5 2.768-2.5.17 0 .34.016.502.046C6.738 6.745 5.12 6.45 3.73 6.945Z"></path>
+<path d="M11.166 9.873c.01-.06.017-.12.017-.183 0-1.638-1.328-2.966-2.966-2.966-.31 0-.61.05-.892.138a2.915 2.915 0 0 1 .892 2.828c0 .24-.03.473-.086.698.24-.04.49-.062.748-.062 1.638 0 2.966 1.328 2.966 2.966 0 .42-.086.82-.245 1.188.94-.65 1.57-1.748 1.57-2.99C12.736 11.235 12.115 10.428 11.166 9.873Z"></path>
+</svg>
+            Sign Up with Apple
+          </button>
+</div>
+</div>
+</div>
+</div>
+</body></html>

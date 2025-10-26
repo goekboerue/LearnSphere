@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Profile Settings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4A90E2",
+                        "background-light": "#F5F5F5",
+                        "background-dark": "#101c22",
+                        "secondary": "#F5F5F5",
+                        "accent": "#7ED321",
+                        "text-primary": "#333333",
+                        "text-secondary": "#4c809a"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 48px;
+            height: 28px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 28px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 20px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked+.slider {
+            background-color: #4A90E2;
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-primary">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between border-b border-gray-200 dark:border-gray-700">
+<div class="text-text-primary dark:text-white flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</div>
+<h2 class="text-text-primary dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Profile Settings</h2>
+<div class="w-12"></div>
+</div>
+<div class="p-4 @container">
+<!-- Profile Header -->
+<div class="flex w-full flex-col gap-4 items-center mb-6">
+<div class="relative">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-32 w-32" data-alt="User's profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB0W8FNt1OvDErSA1RpIU-v7rv4-KPaO6p9DqyFXlhxBF3p87-WfcgXea1Az03m30F_LvjRgGvmjBOXKEcoX3ST-QfpCRQ-7AfcxzvXBpfSXMXvMEPHYfuiV8tYIzHgfdY0PdeXYICESG2B4_pvdhJKwHWYaVpFLM2M97grZteKjobmJxHnK3DWT-9pzstK7lKhHwMfjLlZcEbX5vFF-RUWFaKcvRf5zooGZBcacDvxymbJY9BhHsILdIb8p1rh2FYmPWbmxgnsxPJ-");'></div>
+<button class="absolute bottom-0 right-0 flex items-center justify-center w-10 h-10 bg-primary rounded-full text-white">
+<span class="material-symbols-outlined">edit</span>
+</button>
+</div>
+<div class="flex flex-col items-center justify-center">
+<p class="text-text-primary dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">Alex Johnson</p>
+<p class="text-text-secondary dark:text-gray-400 text-base font-normal leading-normal text-center">alex.j@example.com</p>
+</div>
+</div>
+<!-- Personal Information Section -->
+<h3 class="text-text-primary dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Personal Information</h3>
+<div class="flex flex-col gap-4 px-4 py-3">
+<label class="flex flex-col">
+<p class="text-text-primary dark:text-white text-base font-medium leading-normal pb-2">Full Name</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-text-primary dark:text-white focus:outline-0 focus:ring-0 border-none bg-secondary dark:bg-gray-800 h-14 placeholder:text-text-secondary p-4 text-base font-normal leading-normal" value="Alex Johnson"/>
+</label>
+<label class="flex flex-col">
+<p class="text-text-primary dark:text-white text-base font-medium leading-normal pb-2">Email Address</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-text-primary dark:text-white focus:outline-0 focus:ring-0 border-none bg-secondary dark:bg-gray-800 h-14 placeholder:text-text-secondary p-4 text-base font-normal leading-normal" value="alex.j@example.com"/>
+</label>
+<label class="flex flex-col">
+<p class="text-text-primary dark:text-white text-base font-medium leading-normal pb-2">Password</p>
+<div class="relative">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-text-primary dark:text-white focus:outline-0 focus:ring-0 border-none bg-secondary dark:bg-gray-800 h-14 placeholder:text-text-secondary p-4 text-base font-normal leading-normal" type="password" value="••••••••••"/>
+<a class="absolute inset-y-0 right-0 flex items-center pr-4 text-sm font-semibold text-primary" href="#">Change</a>
+</div>
+</label>
+</div>
+<!-- Notification Settings Section -->
+<h3 class="text-text-primary dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-8">Notification Settings</h3>
+<div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm">
+<div class="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
+<p class="text-text-primary dark:text-white text-base font-medium">Test Results</p>
+<label class="switch">
+<input checked="" type="checkbox"/>
+<span class="slider"></span>
+</label>
+</div>
+<div class="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
+<p class="text-text-primary dark:text-white text-base font-medium">Progress Reports</p>
+<label class="switch">
+<input checked="" type="checkbox"/>
+<span class="slider"></span>
+</label>
+</div>
+<div class="flex items-center justify-between p-4">
+<p class="text-text-primary dark:text-white text-base font-medium">App Announcements</p>
+<label class="switch">
+<input type="checkbox"/>
+<span class="slider"></span>
+</label>
+</div>
+</div>
+<!-- Child's Profile Section -->
+<h3 class="text-text-primary dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-8">Child's Profile</h3>
+<div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<img class="w-12 h-12 rounded-full" data-alt="Child's profile picture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6vMH-2HZObMlJV8MbcajvQujOltYB_TIDGHR5NtoKzmbqoMkYOE4fKXM2yKr53GfqFivDLerd6NIJhQKrQtgo7r3jtvx9bLkL9FIsCbQJhYNlx7TUROMPTr9wac1jGWrTjrnz7PMGjNJTjOffObzlEdsLyllOKVO-EkcK5u83olgQERr9JaEAswizR8dS1SutUVU59LFrqdV2Ioay0wNHRfT1-IgepkFufkqjur2E0yOfMRQ9XsFqb7ZuCPvrX6VA-WYzwUK6U-IX"/>
+<div>
+<p class="text-text-primary dark:text-white font-semibold">Jamie Johnson</p>
+<p class="text-sm text-text-secondary dark:text-gray-400">4th Grade</p>
+</div>
+</div>
+<button class="flex items-center justify-center h-10 px-4 text-primary text-sm font-bold">
+<span class="truncate">View Profile</span>
+</button>
+</div>
+<div class="mt-4 border-t border-gray-200 dark:border-gray-700 pt-4">
+<button class="flex w-full items-center justify-center rounded-xl h-12 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold">
+<span class="material-symbols-outlined mr-2">add</span>
+<span class="truncate">Link Another Child's Profile</span>
+</button>
+</div>
+</div>
+<!-- Account Actions -->
+<div class="mt-8 flex flex-col gap-4 px-4">
+<button class="w-full h-14 bg-primary text-white rounded-xl text-base font-bold shadow-md hover:bg-primary/90 transition-colors">
+                    Save Changes
+                </button>
+<button class="w-full h-14 bg-transparent text-red-500 rounded-xl text-base font-bold">
+                    Log Out
+                </button>
+</div>
+</div>
+<!-- Success Modal/Popup -->
+<div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 hidden" id="success-modal">
+<div class="bg-white dark:bg-gray-800 rounded-xl p-6 text-center max-w-sm w-full shadow-lg">
+<div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-accent mb-4">
+<span class="material-symbols-outlined text-4xl text-white">check</span>
+</div>
+<h3 class="text-lg font-bold text-text-primary dark:text-white">Profile Linked!</h3>
+<p class="text-text-secondary dark:text-gray-400 mt-2">You have successfully linked your child's profile.</p>
+<button class="mt-6 w-full h-12 bg-primary text-white rounded-xl text-base font-bold" onclick="document.getElementById('success-modal').classList.add('hidden')">
+                    Done
+                </button>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Onboarding</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#13a4ec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans"]
+          },
+          borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex items-center p-4 pb-2 justify-between">
+<div class="flex size-12 shrink-0 items-center justify-start"></div>
+<div class="flex w-12 items-center justify-end"><p class="text-primary text-base font-bold leading-normal tracking-[0.015em] shrink-0">Skip</p></div>
+</div>
+<div class="flex-grow flex flex-col justify-center items-center">
+<div class="flex w-full @container py-3 justify-center">
+<div class="w-full max-w-sm gap-1 overflow-hidden bg-background-light dark:bg-background-dark @[480px]:gap-2 aspect-[3/2] flex">
+<div class="w-full bg-center bg-no-repeat bg-contain aspect-auto flex-1" data-alt="A colorful illustration of a child happily learning on a tablet, with icons representing math and science floating around." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDG_srK-8npq8vujIJGe-nqyeWv_pFDftqrxM3SEd2JDgnoiMyS1pMbjb08gqWL0cGrcQnWkbndBGe3hiyRf2ptaqocfHDOw6trEx8fEh0V2SMMuPVDzD3lmjNcjcGtSYaOplsU_Lv-G96ObZ1Xu6xpN241eFyHBnDAeESZflnPdOMsAR0SvxXje_wJYaXkBXJ8ivJidcO7XlQgrguea95oaYrrfsyFnZQeoMFfYTeShCrU0t6c5w-vPEkplWpdxZo2ZbdRpRrFDRqQ");'></div>
+</div>
+</div>
+<h1 class="text-slate-900 dark:text-white tracking-light text-[32px] font-bold leading-tight px-4 text-center pb-3 pt-6">Learning Made Fun!</h1>
+<p class="text-slate-600 dark:text-slate-300 text-base font-normal leading-normal pb-3 pt-1 px-4 text-center max-w-md">
+      Take exciting tests and see your skills grow. Parents can track progress and get helpful insights.
+    </p>
+</div>
+<div class="px-4 py-8">
+<div class="flex w-full flex-row items-center justify-center gap-3 py-5">
+<div class="h-2 w-2 rounded-full bg-primary"></div>
+<div class="h-2 w-2 rounded-full bg-primary/30"></div>
+<div class="h-2 w-2 rounded-full bg-primary/30"></div>
+<div class="h-2 w-2 rounded-full bg-primary/30"></div>
+</div>
+<button class="flex w-full items-center justify-center gap-x-2 rounded-lg bg-primary px-6 py-4 text-center text-lg font-bold text-white shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark">
+<span>Next</span>
+</button>
+</div>
+</div>
+</body></html>
